@@ -1,0 +1,37 @@
+body {
+  background: #f5f7fb;
+}
+.left { background:#f8fafc; }
+
+.dashboard-header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.stat {
+  flex: 1 1 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: linear-gradient(135deg,#ffffff 0%, #f1f5f9 100%);
+  box-shadow: 0 4px 10px rgba(14,30,37,0.06);
+  border: 1px solid rgba(14,30,37,0.04);
+}
+.stat .value { font-size: 1.35rem; font-weight:600; }
+.stat .label { font-size: .85rem; color:#6b7280; }
+
+.card { border: none; }
+.card .card-body { padding: 1rem; }
+
+.table thead th { background: #f8fafc; }
+
+.actions a { display:block; padding:10px 6px; color:#0b5ed7; }
+.actions a:hover { text-decoration:none; background:rgba(11,94,215,0.04); border-radius:4px; }
+
+@media (max-width:768px) {
+  .stats-grid { flex-direction: column; }
+}
